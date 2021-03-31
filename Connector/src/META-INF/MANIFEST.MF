@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Main-Class: MainKt
+Class-Path: log4j-api-2.9.1.jar gson-2.8.1.jar netty-all-4.1.9.Final.jar
+  kotlinx-coroutines-core-1.4.2.jar kotlin-stdlib-1.4.0.jar annotations-
+ 13.0.jar kotlin-stdlib-common-1.4.0.jar kotlin-stdlib.jar kotlin-reflec
+ t.jar kotlin-test.jar kotlin-stdlib-jdk7.jar kotlin-stdlib-jdk8.jar
+

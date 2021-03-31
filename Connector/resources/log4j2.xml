@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="TRACE1" level="TRACE" additivity="false">
+            <AppenderRef ref="Console" level="TRACE" />
+        </Logger>
+        <Logger name="DEBUG" level="DEBUG" additivity="false">
+<!--            <AppenderRef ref="Console" level="TRACE" />-->
+        </Logger>
+
+        <Logger name="DEV" level="TRACE" additivity="false">
+            <AppenderRef ref="Console" level="TRACE"/>
+            <AppenderRef ref="Console" level="WARN"/>
+        </Logger>
+
+        <Logger name="SOCKET_SEND_MESSAGE" level="TRACE" additivity="false">
+            <AppenderRef ref="Console" level="TRACE"/>
+        </Logger>
+        <Logger name="SOCKET_RECEIVE_MESSAGE" level="TRACE" additivity="false">
+            <AppenderRef ref="Console" level="TRACE"/>
+        </Logger>
+
+        <Logger name="MAIN" level="TRACE" additivity="false">
+            <AppenderRef ref="Console" level="TRACE"/>
+            <AppenderRef ref="Console" level="WARN"/>
+            <AppenderRef ref="Console" level="FATAL"/>
+        </Logger>
+         Root Logger
+<!--        <Root level="trace" name="root">-->
+<!--            <AppenderRef ref="Console"/>-->
+<!--        </Root>-->
+    </Loggers>
+</Configuration>
